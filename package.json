@@ -1,0 +1,65 @@
+{
+    "$schema": "./@types/schema/package/index.json",
+    "package_version": 2,
+    "name": "scene-switcher",
+    "version": "1.0.0",
+    "author": "Cocos Creator",
+    "editor": ">=3.8.6",
+    "scripts": {
+        "preinstall": "node ./scripts/preinstall.js",
+        "build": "tsc",
+        "watch": "tsc -w"
+    },
+    "description": "i18n:scene-switcher.description",
+    "main": "./dist/main.js",
+    "devDependencies": {
+        "@cocos/creator-types": "^3.8.6",
+        "@types/node": "^18.17.1",
+        "typescript": "^5.8.2"
+    },
+    "contributions": {
+        "scene": {
+            "script": "./dist/scene.js"
+        },
+        "menu": [
+            {
+                "path": "i18n:scene-switcher",
+                "label": "i18n:scene-switcher.show_log",
+                "message": "show-log"
+            },
+            {
+                "path": "i18n:scene-switcher/Scene Switcher/Switch To SceneA",
+                "label": "切换到 SceneA",
+                "message": "open-scene",
+                "args": [
+                    "SceneA"
+                ]
+            },
+            {
+                "path": "i18n:scene-switcher/Scene Switcher/Switch To SceneB",
+                "label": "切换到 SceneB",
+                "message": "open-scene",
+                "args": [
+                    "SceneB"
+                ]
+            }
+        ],
+        "messages": {
+            "show-log": {
+                "methods": [
+                    "showLog"
+                ]
+            },
+            "open-scene-main": {
+                "methods": [
+                    "openSceneMain"
+                ]
+            },
+            "open-scene-game": {
+                "methods": [
+                    "openSceneGame"
+                ]
+            }
+        }
+    }
+}
