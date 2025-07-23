@@ -36,9 +36,9 @@ npm run build
 > 截图展示：
 
 
-<img src="./images/menu1.png" alt="菜单示例1" width="400" /><br/>
-<img src="./images/menu2.png" alt="菜单示例2" width="580" /><br/>
-<img src="./images/npm_run_build.png" alt="构建示例" width="600" /><br/>
+<img src="./static/images/menu1.png" alt="菜单示例1" width="400" /><br/>
+<img src="./static/images/menu2.png" alt="菜单示例2" width="580" /><br/>
+<img src="./static/images/npm_run_build.png" alt="构建示例" width="600" /><br/>
 
 ## 目录结构
 
@@ -60,6 +60,7 @@ extensions/scene-switcher/
 - 如遇到类型报错，请确保依赖的 `@cocos/creator-types` 版本与 Cocos Creator 保持一致。
 - 若无法切换场景，请确认场景名称与实际资源一致。
 
+
 ## 作者信息
 
 - 作者：super999
@@ -68,10 +69,24 @@ extensions/scene-switcher/
 - 邮箱：sup9@qq.com
 - 微信二维码：
 
-  ![微信二维码](./images/wechat_qr.png)
+  ![微信二维码](./static/images/wechat_qr.png)
+
+## GitHub 仓库
+
+项目源码及最新进展请访问：
+
+[https://github.com/super999/scene-switcher](https://github.com/super999/scene-switcher)
 
 ---
 
 ## 许可协议
 
 MIT License
+
+## 更新声明(可选)
+
+### v1.0.0
+- 初始版本，包含场景切换和资源管理功能。
+- 添加了打印场景和资源信息的菜单选项。
+- 支持通过菜单和消息调用。
+- 包含文档和截图。

@@ -33,10 +33,12 @@ npm run build
 
 ## 插件菜单截图
 
-> 下图展示了 Scene Switcher 扩展在 Cocos Creator 菜单栏中的实际效果：
+> 截图展示：
 
-![菜单示例1](./images/menu1.png)
-![菜单示例2](./images/menu2.png)
+
+<img src="./static/images/menu1.png" alt="菜单示例1" width="400" /><br/>
+<img src="./static/images/menu2.png" alt="菜单示例2" width="580" /><br/>
+<img src="./static/images/npm_run_build.png" alt="构建示例" width="600" /><br/>
 
 ## 目录结构
 
@@ -61,15 +63,29 @@ extensions/scene-switcher/
 ## 作者信息
 
 - 作者：super999
-- QQ：123456789
-- 微信号：super999wx
-- 邮箱：super999@example.com
+- QQ：281656070
+- 微信号：super999t
+- 邮箱：sup9@qq.com
 - 微信二维码：
 
-  ![微信二维码](./images/wechat_qr.png)
+  ![微信二维码](./static/images/wechat_qr.png)
+
+## GitHub 仓库
+
+项目源码及最新进展请访问：
+
+[https://github.com/super999/scene-switcher](https://github.com/super999/scene-switcher)
 
 ---
 
 ## 许可协议
 
 MIT License
+
+## 更新声明(可选)
+
+### v1.0.0
+- 初始版本，包含场景切换和资源管理功能。
+- 添加了打印场景和资源信息的菜单选项。
+- 支持通过菜单和消息调用。
+- 包含文档和截图。
