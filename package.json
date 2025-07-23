@@ -23,25 +23,39 @@
         },
         "menu": [
             {
-                "path": "i18n:scene-switcher",
+                "path": "i18n:scene-switcher.name",
+                "label": "i18n:scene-switcher.switch_to_scene_main",
+                "message": "open-scene-main"
+            },
+            {
+                "path": "i18n:scene-switcher.name",
+                "label": "i18n:scene-switcher.switch_to_scene_game",
+                "message": "open-scene-game"
+            },
+            {
+                "path": "i18n:scene-switcher.name",
                 "label": "i18n:scene-switcher.show_log",
                 "message": "show-log"
             },
             {
-                "path": "i18n:scene-switcher/Scene Switcher/Switch To SceneA",
-                "label": "切换到 SceneA",
-                "message": "open-scene",
-                "args": [
-                    "SceneA"
-                ]
+                "path": "i18n:scene-switcher.name",
+                "label": "i18n:scene-switcher.print_all_scenes",
+                "message": "show-all-scenes"
             },
             {
-                "path": "i18n:scene-switcher/Scene Switcher/Switch To SceneB",
-                "label": "切换到 SceneB",
-                "message": "open-scene",
-                "args": [
-                    "SceneB"
-                ]
+                "path": "i18n:scene-switcher.name",
+                "label": "i18n:scene-switcher.print_all_scenes_v2",
+                "message": "print-all-scenes-v2"
+            },
+            {
+                "path": "i18n:scene-switcher.name",
+                "label": "i18n:scene-switcher.show_all_scripts",
+                "message": "show-all-scripts"
+            },
+            {
+                "path": "i18n:scene-switcher.name",
+                "label": "i18n:scene-switcher.print_all_assets",
+                "message": "print-all-assets"
             }
         ],
         "messages": {
@@ -51,13 +65,51 @@
                 ]
             },
             "open-scene-main": {
+                "public": true,
+                "description": "打开主场景",
+                "doc": "i18n:scene-switcher.open_scene_main",
                 "methods": [
                     "openSceneMain"
                 ]
             },
             "open-scene-game": {
+                "public": true,
+                "description": "打开游戏场景",
+                "doc": "i18n:scene-switcher.open_scene_game",
                 "methods": [
                     "openSceneGame"
+                ]
+            },
+            "show-all-scenes": {
+                "public": true,
+                "description": "打印所有场景信息",
+                "doc": "i18n:scene-switcher.show_all_scenes",
+                "methods": [
+                    "showAllScenes"
+                ]
+            },
+            "show-all-scripts": {
+                "public": true,
+                "description": "打印所有脚本信息",
+                "doc": "i18n:scene-switcher.show_all_scripts",
+                "methods": [
+                    "showAllScripts"
+                ]
+            },
+            "print-all-scenes-v2": {
+                "public": true,
+                "description": "打印所有场景信息（v2版本）",
+                "doc": "i18n:scene-switcher.print_all_scenes_v2",
+                "methods": [
+                    "printAllScenesV2"
+                ]
+            },
+            "print-all-assets": {
+                "public": true,
+                "description": "打印所有资源信息",
+                "doc": "i18n:scene-switcher.print_all_assets",
+                "methods": [
+                    "printAllAssets"
                 ]
             }
         }

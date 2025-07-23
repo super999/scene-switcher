@@ -7,19 +7,13 @@ import { join } from 'path';
 // 当前版本的 cc 定义文件可以在当前项目的 temp/declarations/cc.d.ts 找到
 module.paths.push(join(Editor.App.path, 'node_modules'));
 
-import { director } from 'cc';
+// import { director, Scene, Texture2D } from 'cc';
 
 
-interface SceneInfo {
-    name: string;
-    path: string;
-}
-
-
-
-// Cocos Creator 编辑器环境下，Editor 是全局变量
-declare const Editor: any;
-
+import { showAllScenes, printAllScenesV2, openSceneMain, openSceneGame } from './scene';
+// import { AssetInfo } from '@cocos/creator-types/editor/packages/asset-db/@types/public';
+import { showAllScripts } from './script';
+import { printAllAssets } from './assets';
 /**
  * @en Registration method for the main process of Extension
  * @zh 为扩展的主进程的注册方法
@@ -33,30 +27,12 @@ export const methods: { [key: string]: (...any: any) => any } = {
         console.log('Hello World - 6');
     },
 
-    // 切换到 Main 场景
-    async openSceneMain() {
-        const sceneName = 'Main';
-        const options = {
-            name: pkg.name,            // 与 package.json 中 name 保持一致
-            method: 'openScene',       // scene.ts 中的方法名
-            args: [sceneName]          // 传入场景名称
-        };
-        // 调用场景脚本
-        await Editor.Message.request('scene', 'execute-scene-script', options);
-        Editor.log(`Scene Switcher: 已切换到场景 ${sceneName}`);
-    },
-
-    // 切换到 Game 场景
-    async openSceneGame() {
-        const sceneName = 'Game';
-        const options = {
-            name: pkg.name,
-            method: 'openScene',
-            args: [sceneName]
-        };
-        await Editor.Message.request('scene', 'execute-scene-script', options);
-        Editor.log(`Scene Switcher: 已切换到场景 ${sceneName}`);
-    }
+    showAllScenes,
+    printAllScenesV2,
+    showAllScripts,
+    printAllAssets,
+    openSceneMain,
+    openSceneGame,
 };
 
 /**
@@ -75,20 +51,8 @@ export function unload() {
     console.log("extension scene-switcher unloaded");
 }
 
-// 获取所有场景
-function getAllScenes(): SceneInfo[] {
-    const scenes: SceneInfo[] = [];
-    const assets = Editor.Message.request('asset-db', 'query-assets', {
-        type: 'scene',
-    });
 
-    assets.forEach((asset: any) => {
-        scenes.push({
-            name: asset.name,
-            path: asset.path
-        });
-    });
 
-    return scenes;
-}
+
+
 
