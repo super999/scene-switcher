@@ -69,7 +69,8 @@ extensions/scene-switcher/
 - 邮箱：sup9@qq.com
 - 微信二维码：
 
-  ![微信二维码](./static/images/wechat_qr.png)
+- 微信二维码：
+  <img src="./static/images/wechat_qr.png" alt="微信二维码" width="600" /><br/>
 
 ## GitHub 仓库
 

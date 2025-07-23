@@ -65,8 +65,7 @@ extensions/scene-switcher/
 - WeChat: super999t
 - Email: sup9@qq.com
 - WeChat QR Code:
-
-  ![WeChat QR Code](./static/images/wechat_qr.png)
+  <img src="./static/images/wechat_qr.png" alt="WeChat QR Code" width="600" /><br/>
 
 ## GitHub Repository
 
