@@ -3,13 +3,14 @@
     "package_version": 2,
     "name": "scene-switcher",
     "version": "1.0.0",
-    "author": "Cocos Creator",
+    "author": "super999",
     "editor": ">=3.8.6",
     "scripts": {
         "preinstall": "node ./scripts/preinstall.js",
         "build": "tsc",
         "watch": "tsc -w"
     },
+    "repository": "https://github.com/super999/scene-switcher",
     "description": "i18n:scene-switcher.description",
     "main": "./dist/main.js",
     "devDependencies": {

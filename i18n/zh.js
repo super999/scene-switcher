@@ -5,7 +5,7 @@ const { name } = require("./en");
 module.exports = 
 { 
     name: "场景切换器",
-    description: "一份空白的扩展", 
+    description: "用于 Cocos Creator 的场景切换与资源管理扩展样例，支持一键切换场景、打印场景和资源信息。仓库地址：https://github.com/super999/scene-switcher", 
     show_log: "输出日志",
     print_all_scenes: "打印所有场景信息",
     scene_switcher: "场景切换",

@@ -2,7 +2,7 @@
 module.exports =
 {
     name: "Scene Switcher",
-    description: "A blank extension",
+    description: "A Cocos Creator extension for scene switching and asset management. Supports one-click scene switching and printing scene/asset information. Repository: https://github.com/super999/scene-switcher",
     show_log: "Output log",
     print_all_scenes: "Print all scene information",
      scene_switcher: "Scene Switcher",
